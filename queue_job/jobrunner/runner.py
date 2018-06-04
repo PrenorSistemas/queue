@@ -183,7 +183,7 @@ def _async_http_get(port, db_name, job_uuid):
     #       if this was python3 I would be doing this with
     #       asyncio, aiohttp and aiopg
     def urlopen():
-        url = ('http://192.168.250.246:%s/queue_job/runjob?db=%s&job_uuid=%s' %
+        url = ('http://192.168.250.247:%s/queue_job/runjob?db=%s&job_uuid=%s' %
                (port, db_name, job_uuid))
         try:
             # we are not interested in the result, so we set a short timeout
